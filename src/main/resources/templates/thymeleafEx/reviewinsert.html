@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>REVIEW</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
-<body>
+<body class="container">
 <img src="/static/images/face2.jpeg" th:src="@{/images/face2.jpeg}" alt="face2" >
 <h1>REVIEWS</h1>
 <form th:action="@{/customer/INSERTREVIEW}" th:object="${INSERTREVIEW}" method="post">
