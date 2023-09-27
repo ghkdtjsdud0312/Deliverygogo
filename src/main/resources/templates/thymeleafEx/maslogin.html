@@ -6,12 +6,15 @@
 </head>
 <body>
 <h1>MASTER LOGIN</h1>
+<img src="/static/images/face2.jpeg" th:src="@{/images/face2.jpeg}" alt="이미지 설명">
 <form th:action="@{/customer/masterLogin}" th:object="${MASLOGIN}" method="post">
     <div>
+        <img src="/static/images/wkwkdaud.jpeg" th:src="@{/images/wkwkdaud.jpeg}" alt="짜장면" width="38" height="30">
         <label for="BIZNUM">BIZNUM:</label>
         <input type="text" id="BIZNUM" th:field="*{bizNum}" />
     </div>
     <div>
+        <img src="/static/images/wkwkdaud.jpeg" th:src="@{/images/wkwkdaud.jpeg}" alt="짜장면" width="38" height="30">
         <label for="MASTER_PW">MASTER_PW:</label>
         <input type="text" id="MASTER_PW" th:field="*{masterPW}" />
     </div>

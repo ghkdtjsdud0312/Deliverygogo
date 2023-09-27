@@ -72,10 +72,9 @@ import java.util.List;
         }
         @PostMapping("/masterLogin")
         public String maslogtDB(@ModelAttribute("MASLOGIN") MasterVO masterVO) throws Exception {
-            System.out.println("masterLogin post call~~~~~~~");
             MasterDAO dao = new MasterDAO();
             dao.maslogin(masterVO);
             return "thymeleafEx/masloginRst";
-    }
+        }
 }
 

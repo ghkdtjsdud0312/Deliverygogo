@@ -5,25 +5,31 @@
     <title>REVIEW</title>
 </head>
 <body>
+<img src="/static/images/face2.jpeg" th:src="@{/images/face2.jpeg}" alt="face2" >
 <h1>REVIEWS</h1>
 <form th:action="@{/customer/INSERTREVIEW}" th:object="${INSERTREVIEW}" method="post">
     <div>
+        <img src="/static/images/qkq.jpeg" th:src="@{/images/qkq.jpeg}" alt="밥" width="38" height="30">
         <label for="USER_ID">Customer ID:</label>
         <input type="text" id="USER_ID" th:field="*{USER_ID}" />
     </div>
     <div>
+        <img src="/static/images/chqkq.jpeg" th:src="@{/images/chqkq.jpeg}" alt="초밥" width="38" height="30">
         <label for="STORE_NUM">STORE_NUM:</label>
         <input type="text" id="STORE_NUM" th:field="*{STORE_NUM}" />
     </div>
     <div>
+        <img src="/static/images/qkq.jpeg" th:src="@{/images/qkq.jpeg}" alt="밥" width="38" height="30">
         <label for="MENU_NAME">MENU_NAME:</label>
         <input type="text" id="MENU_NAME" th:field="*{MENU_NAME}" />
     </div>
     <div>
+        <img src="/static/images/chqkq.jpeg" th:src="@{/images/chqkq.jpeg}" alt="초밥" width="38" height="30">
         <label for="SCORE">SCORE:</label>
         <input type="text" id="SCORE" th:field="*{SCORE}" />
     </div>
     <div>
+        <img src="/static/images/qkq.jpeg" th:src="@{/images/qkq.jpeg}" alt="밥" width="38" height="30">
         <label for="WRITE_REVIEW">WRITE_REVIEW:</label>
         <input type="text" id="WRITE_REVIEW" th:field="*{WRITE_REVIEW}" />
     </div>

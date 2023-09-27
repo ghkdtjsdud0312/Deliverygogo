@@ -6,12 +6,20 @@
 </head>
 <body>
 <h1>CUSTOMER LOGIN</h1>
+
+<img src="/static/images/face1.jpeg" th:src="@{/images/face1.jpeg}" alt="이미지 설명">
+
+
 <form th:action="@{/customer/customerLogin}" th:object="${CUSLOGIN}" method="post">
     <div>
-        <label for="USER_ID">Customer Number:</label>
-        <input type="text" id="USER_ID" th:field="*{USER_ID}" />
+        <div>
+            <img src="/static/images/ejrqhrdl.jpeg" th:src="@{/images/ejrqhrdl.jpeg}" alt="이미지 설명" width="38" height="30">
+            <label for="USER_ID">Customer Number:</label>
+            <input type="text" id="USER_ID" th:field="*{USER_ID}" />
+        </div>
     </div>
     <div>
+        <img src="/static/images/ejrqhrdl.jpeg" th:src="@{/images/ejrqhrdl.jpeg}" alt="이미지 설명" width="38" height="30">
         <label for="USER_PW">Customer Password:</label>
         <input type="text" id="USER_PW" th:field="*{USER_PW}" />
     </div>

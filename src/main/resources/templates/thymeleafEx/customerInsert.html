@@ -6,40 +6,50 @@
 </head>
 <body>
     <h1>New Customers</h1>
+    <img src="/static/images/face1.jpeg" th:src="@{/images/face1.jpeg}" alt="이미지 설명">
 <form th:action="@{/customer/insert}" th:object="${customers}" method="post">
     <div>
+        <img src="/static/images/chicken.jpeg" th:src="@{/images/chicken.jpeg}" alt="치킨" width="38" height="30">
         <label for="USER_ID">Customer Number:</label>
         <input type="text" id="USER_ID" th:field="*{USER_ID}" />
     </div>
     <div>
+        <img src="/static/images/ham.jpeg" th:src="@{/images/ham.jpeg}" alt="치킨" width="38" height="30">
         <label for="USER_PW">Customer Password:</label>
         <input type="text" id="USER_PW" th:field="*{USER_PW}" />
     </div>
     <div>
+        <img src="/static/images/chicken.jpeg" th:src="@{/images/chicken.jpeg}" alt="치킨" width="38" height="30">
         <label for="USER_NAME">Customer Name:</label>
         <input type="text" id="USER_NAME" th:field="*{USER_NAME}" />
     </div>
     <div>
+        <img src="/static/images/ham.jpeg" th:src="@{/images/ham.jpeg}" alt="치킨" width="38" height="30">
         <label for="GENDER">Gender:</label>
         <input type="text" id="GENDER" th:field="*{GENDER}" />
     </div>
     <div>
+        <img src="/static/images/chicken.jpeg" th:src="@{/images/chicken.jpeg}" alt="치킨" width="38" height="30">
         <label for="PHONE">Phone Number:</label>
         <input type="text" id="PHONE" th:field="*{PHONE}" />
     </div>
     <div>
+        <img src="/static/images/ham.jpeg" th:src="@{/images/ham.jpeg}" alt="치킨" width="38" height="30">
         <label for="ADDR">Address:</label>
         <input type="text" id="ADDR" th:field="*{ADDR}" />
     </div>
     <div>
+        <img src="/static/images/chicken.jpeg" th:src="@{/images/chicken.jpeg}" alt="치킨" width="38" height="30">
         <label for="BIRTH">Birth date:</label>
         <input type="text" id="BIRTH" th:field="*{BIRTH}" />
     </div>
     <div>
+        <img src="/static/images/ham.jpeg" th:src="@{/images/ham.jpeg}" alt="치킨" width="38" height="30">
         <label for="EMAIL">Email:</label>
         <input type="text" id="EMAIL" th:field="*{EMAIL}" />
     </div>
     <div>
+        <img src="/static/images/chicken.jpeg" th:src="@{/images/chicken.jpeg}" alt="치킨" width="38" height="30">
         <label for="MONTHFEE">Monthfee:</label>
         <input type="text" id="MONTHFEE" th:field="*{MONTHFEE}" />
     </div>
