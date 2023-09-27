@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>MASTER LOGIN</title>
+</head>
+<body>
+<h1>MASTER LOGIN</h1>
+<form th:action="@{/customer/masterLogin}" th:object="${MASLOGIN}" method="post">
+    <div>
+        <label for="BIZNUM">BIZNUM:</label>
+        <input type="text" id="BIZNUM" th:field="*{bizNum}" />
+    </div>
+    <div>
+        <label for="MASTER_PW">MASTER_PW:</label>
+        <input type="text" id="MASTER_PW" th:field="*{masterPW}" />
+    </div>
+    <div>
+        <button type="submit">LOGIN</button>
+    </div>
+</form>
+</body>
+</html>

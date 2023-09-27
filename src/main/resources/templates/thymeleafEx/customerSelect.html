@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http:/www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>회원 정보</h2>
+<table border="1" style="border-collapse: collapse;">
+    <thead style="background-color: royalblue; color: white;">
+    <tr>
+        <th>이용자 아이디</th>
+        <th>이용자 비밀번호</th>
+        <th>이용자 이름</th>
+        <th>이용자 성별</th>
+        <th>이용자 전화번호</th>
+        <th>이용자 주소</th>
+        <th>이용자 생년월일</th>
+        <th>이용자 이메일</th>
+        <th>월정액</th>
+    </tr>
+    </thead>
+<tbody>
+<tr th:each="customer : ${customers}">
+    <td th:text="${customer.USER_ID}"></td>
+    <td th:text="${customer.USER_PW}"></td>
+    <td th:text="${customer.USER_NAME}"></td>
+    <td th:text="${customer.GENDER}"></td>
+    <td th:text="${customer.PHONE}"></td>
+    <td th:text="${customer.ADDR}"></td>
+    <td th:text="${customer.BIRTH}"></td>
+    <td th:text="${customer.EMAIL}"></td>
+    <td th:text="${customer.MONTHFEE}"></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

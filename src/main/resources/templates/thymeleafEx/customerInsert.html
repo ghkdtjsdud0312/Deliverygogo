@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>New Customer</title>
+</head>
+<body>
+    <h1>New Customers</h1>
+<form th:action="@{/customer/insert}" th:object="${customers}" method="post">
+    <div>
+        <label for="USER_ID">Customer Number:</label>
+        <input type="text" id="USER_ID" th:field="*{USER_ID}" />
+    </div>
+    <div>
+        <label for="USER_PW">Customer Password:</label>
+        <input type="text" id="USER_PW" th:field="*{USER_PW}" />
+    </div>
+    <div>
+        <label for="USER_NAME">Customer Name:</label>
+        <input type="text" id="USER_NAME" th:field="*{USER_NAME}" />
+    </div>
+    <div>
+        <label for="GENDER">Gender:</label>
+        <input type="text" id="GENDER" th:field="*{GENDER}" />
+    </div>
+    <div>
+        <label for="PHONE">Phone Number:</label>
+        <input type="text" id="PHONE" th:field="*{PHONE}" />
+    </div>
+    <div>
+        <label for="ADDR">Address:</label>
+        <input type="text" id="ADDR" th:field="*{ADDR}" />
+    </div>
+    <div>
+        <label for="BIRTH">Birth date:</label>
+        <input type="text" id="BIRTH" th:field="*{BIRTH}" />
+    </div>
+    <div>
+        <label for="EMAIL">Email:</label>
+        <input type="text" id="EMAIL" th:field="*{EMAIL}" />
+    </div>
+    <div>
+        <label for="MONTHFEE">Monthfee:</label>
+        <input type="text" id="MONTHFEE" th:field="*{MONTHFEE}" />
+    </div>
+    <div>
+        <button type="submit">Save</button>
+    </div>
+</form>
+</body>
+</html>

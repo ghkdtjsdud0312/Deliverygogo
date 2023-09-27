@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>REVIEW</title>
+</head>
+<body>
+<h1>REVIEWS</h1>
+<form th:action="@{/customer/INSERTREVIEW}" th:object="${INSERTREVIEW}" method="post">
+    <div>
+        <label for="USER_ID">Customer ID:</label>
+        <input type="text" id="USER_ID" th:field="*{USER_ID}" />
+    </div>
+    <div>
+        <label for="STORE_NUM">STORE_NUM:</label>
+        <input type="text" id="STORE_NUM" th:field="*{STORE_NUM}" />
+    </div>
+    <div>
+        <label for="MENU_NAME">MENU_NAME:</label>
+        <input type="text" id="MENU_NAME" th:field="*{MENU_NAME}" />
+    </div>
+    <div>
+        <label for="SCORE">SCORE:</label>
+        <input type="text" id="SCORE" th:field="*{SCORE}" />
+    </div>
+    <div>
+        <label for="WRITE_REVIEW">WRITE_REVIEW:</label>
+        <input type="text" id="WRITE_REVIEW" th:field="*{WRITE_REVIEW}" />
+    </div>
+    <div>
+        <button type="submit">Save</button>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CUSTOMER LOGIN</title>
+</head>
+<body>
+<h1>CUSTOMER LOGIN</h1>
+<form th:action="@{/customer/customerLogin}" th:object="${CUSLOGIN}" method="post">
+    <div>
+        <label for="USER_ID">Customer Number:</label>
+        <input type="text" id="USER_ID" th:field="*{USER_ID}" />
+    </div>
+    <div>
+        <label for="USER_PW">Customer Password:</label>
+        <input type="text" id="USER_PW" th:field="*{USER_PW}" />
+    </div>
+    <div>
+        <button type="submit">LOGIN</button>
+    </div>
+</form>
+</body>
+</html>
